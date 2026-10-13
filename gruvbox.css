@@ -1,0 +1,240 @@
+:root {
+  --bg0-darker:#141617; --bg0-h:#1d2021; --bg0:#282828;
+  --bg1:#3c3836; --bg2:#504945; --bg3:#665c54; --bg4:#7c6f64;
+
+  --gray:#928374;
+  --fg4:#a89984; --fg3:#bdae93; --fg2:#d5c4a1; --fg1:#ebdbb2; --fg0:#fbf1c7;
+
+  --red:#fb4934;    --red-dim:#cc241d;
+  --green:#b8bb26;  --green-dim:#98971a;
+  --yellow:#fabd2f; --yellow-dim:#d79921;
+  --blue:#83a598;   --blue-dim:#458588;
+  --purple:#d3869b; --purple-dim:#b16286;
+  --aqua:#8ec07c;   --aqua-dim:#689d6a;
+  --orange:#fe8019; --orange-dim:#d65d0e;
+
+  --accent: var(--yellow);
+}
+
+*, *::before, *::after {
+  font-family: "JetBrains Mono", "JetBrainsMono Nerd Font", monospace !important;
+}
+
+html, body, #react-root, main,
+[data-testid="primaryColumn"], [data-testid="sidebarColumn"],
+header[role="banner"], header[role="banner"] > div, header[role="banner"] nav {
+  background-color: var(--bg0) !important;
+  color: var(--fg1) !important;
+}
+
+div:has([role="tablist"]),
+div:has([data-testid="tweetTextarea_0"]),
+div:has(> h2[role="heading"]), div:has(> div > h2[role="heading"]),
+div:has(form[role="search"]), div:has([data-testid="SearchBox_Search_Input"]),
+[data-testid="cellInnerDiv"] {
+  background-color: var(--bg0) !important;
+  backdrop-filter: none !important;
+}
+
+[data-testid="sidebarColumn"] section,
+[data-testid="sidebarColumn"] aside {
+  background-color: var(--bg0-h) !important;
+  border-radius: 12px;
+}
+
+[data-testid="SearchBox_Search_Input"],
+form[role="search"] > div, form[role="search"] > div > div {
+  background-color: var(--bg1) !important;
+}
+
+[style*="background-color: rgb(0, 0, 0)"],
+[style*="background-color: rgb(21, 32, 43)"],
+[style*="background-color: rgba(0, 0, 0, 0.65)"]   { background-color: var(--bg0) !important; }
+[style*="background-color: rgb(22, 24, 28)"],
+[style*="background-color: rgb(25, 39, 52)"],
+[style*="background-color: rgb(32, 35, 39)"]       { background-color: var(--bg0-h) !important; }
+[style*="background-color: rgb(239, 243, 244)"],
+[style*="background-color: rgb(255, 255, 255)"]    { background-color: var(--fg1) !important; }
+[style*="background-color: rgb(29, 155, 240)"],
+[style*="background-color: rgb(120, 86, 255)"]     { background-color: var(--accent) !important; }
+[style*="background-color: rgb(47, 51, 54)"],
+[style*="background-color: rgb(51, 54, 57)"],
+[style*="background-color: rgb(56, 68, 77)"]       { background-color: var(--bg1) !important; }
+[style*="background-color: rgba(91, 112, 131, 0.4)"] { background-color: rgba(20, 22, 23, 0.7) !important; }
+
+[style*="color: rgb(231, 233, 234)"],
+[style*="color: rgb(247, 249, 249)"],
+[style*="color: rgb(255, 255, 255)"] { color: var(--fg1) !important; }
+[style*="color: rgb(113, 118, 123)"],
+[style*="color: rgb(139, 152, 165)"] { color: var(--gray) !important; }
+[style*="color: rgb(29, 155, 240)"]  { color: var(--accent) !important; }
+[style*="color: rgb(15, 20, 25)"]    { color: var(--bg0-darker) !important; }
+[style*="color: rgb(249, 24, 128)"]  { color: var(--red) !important; }
+[style*="color: rgb(0, 186, 124)"]   { color: var(--green) !important; }
+
+:where(body *):not([role="button"], button, [role="button"] *, button *,
+  input, textarea, svg, svg *, img, [data-testid^="UserAvatar"] *, [role="tab"] *) {
+  border-color: var(--bg1) !important;
+}
+
+[data-testid="tweetText"], [data-testid="tweetText"] span,
+[data-testid="User-Name"] span, [data-testid="UserName"] span,
+[data-testid="UserCell"] span, [data-testid="trend"] span,
+h1, h2, h3, [role="heading"] span, nav[role="navigation"] span {
+  color: var(--fg1) !important;
+}
+
+[data-testid="User-Name"] a[tabindex="-1"] span, [data-testid="User-Name"] time,
+[data-testid="UserCell"] a[tabindex="-1"] span,
+[data-testid="trend"] > div > div:first-child span,
+[data-testid="socialContext"] span, [data-testid="tweet"] time,
+[data-testid="UserProfileHeader_Items"] span {
+  color: var(--gray) !important;
+}
+
+[data-testid="tweetText"] a, [data-testid="tweetText"] a span,
+[data-testid="UserDescription"] a, [data-testid="UserDescription"] a span {
+  color: var(--blue) !important;
+}
+
+::selection   { background: color-mix(in srgb, var(--purple-dim) 35%, transparent); color: var(--fg1); }
+::placeholder { color: var(--bg4) !important; opacity: 1; }
+
+.public-DraftEditor-content, .public-DraftEditor-content * {
+  color: var(--fg1) !important;
+  caret-color: var(--fg0) !important;
+}
+html body div.DraftEditor-root,
+html body div.DraftEditor-editorContainer,
+html body div.public-DraftEditor-content {
+  background-color: transparent !important;
+}
+html body div.public-DraftEditorPlaceholder-root {
+  position: absolute !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+html body div.public-DraftEditorPlaceholder-root,
+html body div.public-DraftEditorPlaceholder-root * {
+  color: var(--gray) !important;
+}
+[data-testid="toolBar"] svg { color: var(--accent) !important; }
+
+header[role="banner"] nav a > div:hover { background-color: var(--bg1) !important; }
+
+[data-testid="cellInnerDiv"] article:hover { background-color: var(--bg0-h) !important; }
+
+[data-testid="reply"] svg, [data-testid="retweet"] svg, [data-testid="like"] svg,
+[data-testid="bookmark"] svg, [data-testid="share"] svg,
+[data-testid="app-text-transition-container"] { color: var(--gray) !important; }
+
+[data-testid="reply"]:hover svg                         { color: var(--blue) !important; }
+[data-testid="retweet"]:hover svg,
+[data-testid="unretweet"] svg                           { color: var(--green) !important; }
+[data-testid="like"]:hover svg,
+[data-testid="unlike"] svg                              { color: var(--red) !important; }
+[data-testid="bookmark"]:hover svg,
+[data-testid="removeBookmark"] svg                      { color: var(--blue-dim) !important; }
+
+a[data-testid="SideNav_NewTweet_Button"],
+[data-testid="tweetButtonInline"], [data-testid="tweetButton"] {
+  background-color: var(--accent) !important;
+}
+a[data-testid="SideNav_NewTweet_Button"] *,
+[data-testid="tweetButtonInline"] *, [data-testid="tweetButton"] * {
+  background-color: transparent !important;
+  color: var(--bg0-darker) !important;
+  fill: var(--bg0-darker) !important;
+}
+
+[role="tab"] span                           { color: var(--gray) !important; }
+[role="tab"][aria-selected="true"] span     { color: var(--fg1) !important; }
+[role="tab"] div[style*="background-color"] { background-color: var(--accent) !important; }
+[role="tab"]:hover                          { background-color: var(--bg1) !important; }
+
+[role="menu"], [role="dialog"], [data-testid="sheetDialog"], [role="listbox"] {
+  background-color: var(--bg0-h) !important;
+  box-shadow: 0 0 0 1px var(--bg1), 0 8px 24px rgba(0,0,0,.35) !important;
+}
+[role="menuitem"]:hover, [role="option"]:hover { background-color: var(--bg1) !important; }
+
+html body [data-testid="HoverCard"],
+html body #layers [data-testid="HoverCard"] {
+  background-color: var(--bg0-h) !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,.35) !important;
+}
+
+* { scrollbar-color: var(--bg2) var(--bg0); scrollbar-width: thin; }
+
+html body :is(
+  [data-testid="placementTracking"] > :is([role="button"], button),
+  [data-testid="placementTracking"] > div > :is([role="button"], button),
+  [data-testid="userActions"] ~ :is([role="button"], button),
+  [data-testid*="unfollow" i], [data-testid$="-following" i]
+):not([data-testid$="-follow"]):not([data-testid="userActions"]) {
+  background-color: var(--bg0) !important;
+  border: 1px solid var(--bg3) !important;
+  color: var(--fg1) !important;
+}
+html body :is(
+  [data-testid="placementTracking"] > :is([role="button"], button),
+  [data-testid="placementTracking"] > div > :is([role="button"], button),
+  [data-testid="userActions"] ~ :is([role="button"], button),
+  [data-testid*="unfollow" i], [data-testid$="-following" i]
+):not([data-testid$="-follow"]):not([data-testid="userActions"]) :is(div, span) {
+  background-color: transparent !important;
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+  opacity: 1 !important;
+}
+html body :is(
+  [data-testid="placementTracking"] > :is([role="button"], button),
+  [data-testid="placementTracking"] > div > :is([role="button"], button),
+  [data-testid="userActions"] ~ :is([role="button"], button),
+  [data-testid*="unfollow" i], [data-testid$="-following" i]
+):not([data-testid$="-follow"]):not([data-testid="userActions"]):hover {
+  border-color: var(--red) !important;
+  color: var(--red) !important;
+}
+
+html body #layers :is([role="button"], button, a[role="link"]):not([data-testid$="-follow"]):not([data-testid="SideNav_NewTweet_Button"]) {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: var(--fg1) !important;
+}
+html body #layers :is([role="button"], button, a[role="link"]):not([data-testid$="-follow"]):not([data-testid="SideNav_NewTweet_Button"]) :is(div, span) {
+  background-color: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+  opacity: 1 !important;
+}
+html body #layers :is([role="button"], button):not([data-testid$="-follow"]):not([data-testid="SideNav_NewTweet_Button"]):hover {
+  color: var(--red) !important;
+}
+
+html body [data-testid$="-follow"],
+html body #layers [data-testid$="-follow"],
+html body :is([role="button"], button)[aria-label^="Follow"]:not([aria-label^="Following"]) {
+  background-color: var(--fg1) !important;
+  border-color: var(--fg1) !important;
+  color: var(--bg0-darker) !important;
+}
+html body [data-testid$="-follow"] *,
+html body #layers [data-testid$="-follow"] *,
+html body :is([role="button"], button)[aria-label^="Follow"]:not([aria-label^="Following"]) * {
+  background-color: transparent !important;
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+html body [data-testid="primaryColumn"] div:has(> [data-testid="app-bar-back"]),
+html body [data-testid="primaryColumn"] div:has(> div > [data-testid="app-bar-back"]) {
+  background-color: var(--bg0) !important;
+}
