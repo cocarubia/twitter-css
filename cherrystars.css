@@ -1,0 +1,258 @@
+:root {
+  --rosewater:#f5d5d8; --flamingo:#f4b8c1; --pink:#f5a9d3; --mauve:#c9a0ee;
+  --red:#f2768f; --maroon:#e8909f; --peach:#f6a97a; --yellow:#f2d08a;
+  --green:#9fdc8f; --teal:#86dcc8; --sky:#84d3e6; --sapphire:#6fbbe8;
+  --blue:#86aaf5; --lavender:#b6b0f8;
+
+  --text:#e2d6f0; --subtext1:#cfc3de; --subtext0:#b9adca;
+  --overlay2:#a595ad; --overlay1:#8f7f9b; --overlay0:#7a6a85;
+  --surface2:#57445f; --surface1:#44344d; --surface0:#33253a;
+  --base:#211724; --mantle:#1a111b; --crust:#130d15;
+
+  --accent: var(--pink);
+
+  --base-rgb: 33, 23, 36;
+  --mantle-rgb: 26, 17, 27;
+  --dim: .72;
+  /* credits to bettysgraphics original gif https://bettysgraphics.neocities.org/images/backgrounds/stars%202.gif */
+  --bg-image: url("data:image/gif;base64,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");
+  --bg-size: auto;
+  --backdrop:
+    linear-gradient(rgba(var(--base-rgb), var(--dim)), rgba(var(--base-rgb), var(--dim))),
+    var(--bg-image);
+}
+
+*, *::before, *::after {
+  font-family: "JetBrains Mono", "JetBrainsMono Nerd Font", monospace !important;
+}
+
+html, body, #react-root, main,
+[data-testid="primaryColumn"], [data-testid="sidebarColumn"],
+header[role="banner"], header[role="banner"] > div, header[role="banner"] nav {
+  background-color: var(--base) !important;
+  background-image: var(--backdrop) !important;
+  background-attachment: fixed !important;
+  background-size: auto, var(--bg-size) !important;
+  color: var(--text) !important;
+}
+
+div:has([role="tablist"]),
+div:has([data-testid="tweetTextarea_0"]),
+div:has(> h2[role="heading"]), div:has(> div > h2[role="heading"]),
+div:has(form[role="search"]), div:has([data-testid="SearchBox_Search_Input"]) {
+  background-color: var(--base) !important;
+  background-image: var(--backdrop) !important;
+  background-attachment: fixed !important;
+  background-size: auto, var(--bg-size) !important;
+  backdrop-filter: none !important;
+}
+
+/* timeline cells: extra dimming so text stays readable over the stars */
+[data-testid="cellInnerDiv"] {
+  background-color: rgba(var(--base-rgb), .42) !important;
+  backdrop-filter: none !important;
+}
+
+[data-testid="sidebarColumn"] section,
+[data-testid="sidebarColumn"] aside {
+  background-color: rgba(var(--mantle-rgb), .78) !important;
+  backdrop-filter: blur(6px) !important;
+  border-radius: 12px;
+}
+
+[data-testid="SearchBox_Search_Input"],
+form[role="search"] > div, form[role="search"] > div > div {
+  background-color: var(--surface0) !important;
+}
+
+[style*="background-color: rgb(0, 0, 0)"],
+[style*="background-color: rgb(21, 32, 43)"],
+[style*="background-color: rgba(0, 0, 0, 0.65)"]   { background-color: var(--base) !important; }
+[style*="background-color: rgb(22, 24, 28)"],
+[style*="background-color: rgb(25, 39, 52)"],
+[style*="background-color: rgb(32, 35, 39)"]       { background-color: var(--mantle) !important; }
+[style*="background-color: rgb(239, 243, 244)"],
+[style*="background-color: rgb(255, 255, 255)"]    { background-color: var(--text) !important; }
+[style*="background-color: rgb(29, 155, 240)"],
+[style*="background-color: rgb(120, 86, 255)"]     { background-color: var(--accent) !important; }
+[style*="background-color: rgb(47, 51, 54)"],
+[style*="background-color: rgb(51, 54, 57)"],
+[style*="background-color: rgb(56, 68, 77)"]       { background-color: var(--surface0) !important; }
+[style*="background-color: rgba(91, 112, 131, 0.4)"] { background-color: rgba(19, 13, 21, 0.7) !important; }
+
+[style*="color: rgb(231, 233, 234)"],
+[style*="color: rgb(247, 249, 249)"],
+[style*="color: rgb(255, 255, 255)"] { color: var(--text) !important; }
+[style*="color: rgb(113, 118, 123)"],
+[style*="color: rgb(139, 152, 165)"] { color: var(--overlay1) !important; }
+[style*="color: rgb(29, 155, 240)"]  { color: var(--accent) !important; }
+[style*="color: rgb(15, 20, 25)"]    { color: var(--crust) !important; }
+[style*="color: rgb(249, 24, 128)"]  { color: var(--red) !important; }
+[style*="color: rgb(0, 186, 124)"]   { color: var(--green) !important; }
+
+:where(body *):not([role="button"], button, [role="button"] *, button *,
+  input, textarea, svg, svg *, img, [data-testid^="UserAvatar"] *, [role="tab"] *) {
+  border-color: var(--surface0) !important;
+}
+
+[data-testid="tweetText"], [data-testid="tweetText"] span,
+[data-testid="User-Name"] span, [data-testid="UserName"] span,
+[data-testid="UserCell"] span, [data-testid="trend"] span,
+h1, h2, h3, [role="heading"] span, nav[role="navigation"] span {
+  color: var(--text) !important;
+}
+
+[data-testid="User-Name"] a[tabindex="-1"] span, [data-testid="User-Name"] time,
+[data-testid="UserCell"] a[tabindex="-1"] span,
+[data-testid="trend"] > div > div:first-child span,
+[data-testid="socialContext"] span, [data-testid="tweet"] time,
+[data-testid="UserProfileHeader_Items"] span {
+  color: var(--overlay1) !important;
+}
+
+[data-testid="tweetText"] a, [data-testid="tweetText"] a span,
+[data-testid="UserDescription"] a, [data-testid="UserDescription"] a span {
+  color: var(--blue) !important;
+}
+
+::selection   { background: color-mix(in srgb, var(--mauve) 35%, transparent); color: var(--text); }
+::placeholder { color: var(--overlay0) !important; opacity: 1; }
+
+.public-DraftEditor-content, .public-DraftEditor-content * {
+  color: var(--text) !important;
+  caret-color: var(--rosewater) !important;
+}
+html body div.DraftEditor-root,
+html body div.DraftEditor-editorContainer,
+html body div.public-DraftEditor-content {
+  background-color: transparent !important;
+}
+html body div.public-DraftEditorPlaceholder-root {
+  position: absolute !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+html body div.public-DraftEditorPlaceholder-root,
+html body div.public-DraftEditorPlaceholder-root * {
+  color: var(--overlay1) !important;
+}
+[data-testid="toolBar"] svg { color: var(--accent) !important; }
+
+header[role="banner"] nav a > div:hover { background-color: var(--surface0) !important; }
+
+[data-testid="cellInnerDiv"] article:hover { background-color: var(--mantle) !important; }
+
+[data-testid="reply"] svg, [data-testid="retweet"] svg, [data-testid="like"] svg,
+[data-testid="bookmark"] svg, [data-testid="share"] svg,
+[data-testid="app-text-transition-container"] { color: var(--overlay1) !important; }
+
+[data-testid="reply"]:hover svg                         { color: var(--blue) !important; }
+[data-testid="retweet"]:hover svg,
+[data-testid="unretweet"] svg                           { color: var(--green) !important; }
+[data-testid="like"]:hover svg,
+[data-testid="unlike"] svg                              { color: var(--red) !important; }
+[data-testid="bookmark"]:hover svg,
+[data-testid="removeBookmark"] svg                      { color: var(--sapphire) !important; }
+
+a[data-testid="SideNav_NewTweet_Button"],
+[data-testid="tweetButtonInline"], [data-testid="tweetButton"] {
+  background-color: var(--accent) !important;
+}
+a[data-testid="SideNav_NewTweet_Button"] *,
+[data-testid="tweetButtonInline"] *, [data-testid="tweetButton"] * {
+  background-color: transparent !important;
+  color: var(--crust) !important;
+  fill: var(--crust) !important;
+}
+
+[role="tab"] span                           { color: var(--overlay1) !important; }
+[role="tab"][aria-selected="true"] span     { color: var(--text) !important; }
+[role="tab"] div[style*="background-color"] { background-color: var(--accent) !important; }
+[role="tab"]:hover                          { background-color: var(--surface0) !important; }
+
+[role="menu"], [role="dialog"], [data-testid="sheetDialog"], [role="listbox"] {
+  background-color: var(--mantle) !important;
+  box-shadow: 0 0 0 1px var(--surface0), 0 8px 24px rgba(0,0,0,.35) !important;
+}
+[role="menuitem"]:hover, [role="option"]:hover { background-color: var(--surface0) !important; }
+
+html body [data-testid="HoverCard"],
+html body #layers [data-testid="HoverCard"] {
+  background-color: var(--mantle) !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,.35) !important;
+}
+
+* { scrollbar-color: var(--surface1) var(--base); scrollbar-width: thin; }
+
+html body :is(
+  [data-testid="placementTracking"] > :is([role="button"], button),
+  [data-testid="placementTracking"] > div > :is([role="button"], button),
+  [data-testid="userActions"] ~ :is([role="button"], button),
+  [data-testid*="unfollow" i], [data-testid$="-following" i]
+):not([data-testid$="-follow"]):not([data-testid="userActions"]) {
+  background-color: var(--base) !important;
+  border: 1px solid var(--surface2) !important;
+  color: var(--text) !important;
+}
+html body :is(
+  [data-testid="placementTracking"] > :is([role="button"], button),
+  [data-testid="placementTracking"] > div > :is([role="button"], button),
+  [data-testid="userActions"] ~ :is([role="button"], button),
+  [data-testid*="unfollow" i], [data-testid$="-following" i]
+):not([data-testid$="-follow"]):not([data-testid="userActions"]) :is(div, span) {
+  background-color: transparent !important;
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+  opacity: 1 !important;
+}
+html body :is(
+  [data-testid="placementTracking"] > :is([role="button"], button),
+  [data-testid="placementTracking"] > div > :is([role="button"], button),
+  [data-testid="userActions"] ~ :is([role="button"], button),
+  [data-testid*="unfollow" i], [data-testid$="-following" i]
+):not([data-testid$="-follow"]):not([data-testid="userActions"]):hover {
+  border-color: var(--red) !important;
+  color: var(--red) !important;
+}
+
+html body #layers :is([role="button"], button, a[role="link"]):not([data-testid$="-follow"]):not([data-testid="SideNav_NewTweet_Button"]) {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: var(--text) !important;
+}
+html body #layers :is([role="button"], button, a[role="link"]):not([data-testid$="-follow"]):not([data-testid="SideNav_NewTweet_Button"]) :is(div, span) {
+  background-color: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+  opacity: 1 !important;
+}
+html body #layers :is([role="button"], button):not([data-testid$="-follow"]):not([data-testid="SideNav_NewTweet_Button"]):hover {
+  color: var(--red) !important;
+}
+
+html body [data-testid$="-follow"],
+html body #layers [data-testid$="-follow"],
+html body :is([role="button"], button)[aria-label^="Follow"]:not([aria-label^="Following"]) {
+  background-color: var(--text) !important;
+  border-color: var(--text) !important;
+  color: var(--crust) !important;
+}
+html body [data-testid$="-follow"] *,
+html body #layers [data-testid$="-follow"] *,
+html body :is([role="button"], button)[aria-label^="Follow"]:not([aria-label^="Following"]) * {
+  background-color: transparent !important;
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+html body [data-testid="primaryColumn"] div:has(> [data-testid="app-bar-back"]),
+html body [data-testid="primaryColumn"] div:has(> div > [data-testid="app-bar-back"]) {
+  background-color: var(--base) !important;
+}
